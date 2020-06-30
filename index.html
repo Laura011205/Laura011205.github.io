@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Lu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="name-logo">LAURA LU</a>
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="assets/toggle_menu.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav-links">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="assets/exit.svg" alt="exit toggle menu"></a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="assets/LauraLuResume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header> 
+        <div class="hero-text">
+            Hi,<br>
+            I'm <span id="LAURA"> LAURA</span>
+        </div>
+        <div class="arrow">
+            <a href="#about">
+                <img src="assets/arrow.svg" alt="scroll down" class="scroll hide-mobile show-desktop" width="50px" height="90px">
+            </a>
+        </div>
+        <section id="about" class="container-about">
+            <div class="section-title">
+                About Me
+            </div>
+            <div class="about-me">
+                <img src="assets/beanie_selfie.svg" alt="nice to meet you!" width="40%" height="40%">
+                <div class="text">
+                    <p>Hello! I’m Laura Lu, a second year computer science and statistics student at the University of Toronto. Outside of class, you will catch me working on my projects at home or wandering around downtown Toronto looking for new bubble tea and dessert shops with my friends.</p>
+                </div>
+            </div>
+        </section>
+        <section class="container-projects" id="projects">
+            <div class="section-title">
+                Projects
+            </div>
+            <div class="LAURA-LU">
+                <a href="#">LAURA LU</a>
+            </div>
+            <div class="project-type">
+                <p>Responsive Portfolio Website (This Site)</p>
+            </div>
+            <ul class="project-description">
+                <li>
+                    <p>Technologies: HTML, CSS, Javascript </p>
+                </li>
+                <li>
+                    <p>A responsive portfolio website built using HTML, CSS and Javascript</p>
+                </li>
+            </ul>
+            <a href="https://github.com/Laura011205?tab=repositories" target="_blank">
+                <button class="repository-btn">Repository</button>
+            </a>
+        </section>
+        <section class="container-contact" id="contact">
+            <div class="contact-logo">
+                <a href="mailto: yunqian.lu@mail.utoronto.ca" target="_blank">
+                    <img src="assets/mail_logo.svg" alt="mail" width="60%" height="60%">
+                </a>
+                <a href="https://www.linkedin.com/in/lauralu1219/" target="_blank">
+                    <img src="assets/linkedin_logo.svg" alt="linkedin" width="60%" height="60%">
+                </a>
+                <a href="https://github.com/Laura011205" target="_blank">
+                    <img src="assets/github_logo.svg" alt="github" width="60%" height="60%">
+                </a>
+                <a href="https://www.instagram.com/laurd_l/" target="_blank">
+                    <img src="assets/instagram_logo.svg" alt="instagram" width="60%" height="60%">
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav-links');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e){
+            nav.classList.toggle('hide-mobile');
+        });
+
+        exit.addEventListener('click', function(e){
+            nav.classList.add('hide-mobile');
+        });
+
+    </script>
+
+</body>
+</html>
